@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/736x/2a/6f/ae/2a6fae2d6436947578dac91ca0cfb24d.jpg') no-repeat center/cover;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.gift-box {
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-align: center;
+}
+.gift-box h1{
+    font-size: 20px;
+    color: #F55B5B;
+}
+
+.gift-box img {
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s;
+}
+
+.gift-box img:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.gift-box.open {
+    transform: scale(1.1);
+}
+
+.surprise {
+    width: 90%;
+    max-width: 400px;
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.surprise h1 {
+    font-size: 26px;
+    color: #F55B5B;
+}
+
+.surprise p {
+    font-size: 18px;
+    color: #F97979;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: #f89c9c;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F55B5B;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.image-container img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🎯 Responsive tối ưu trên điện thoại */
+@media (max-width: 600px) {
+    .gift-box {
+        width: 240px;
+    }
+
+    .gift-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .gift-box img:hover {
+        width: 85px;
+        height: 85px;
+    }
+
+    .surprise {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .surprise h1 {
+        font-size: 20px;
+    }
+
+    .surprise p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .image-container {
+        gap: 5px;
+        flex-direction: row; /* Giữ hàng ngang */
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+
