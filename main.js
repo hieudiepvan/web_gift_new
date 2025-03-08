@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function adjustHeartShape() {
         const isLandscape = window.innerWidth > window.innerHeight;
         const numImages = isLandscape ? 25 : 29;
-        const size = isLandscape ? 14 : 25;
-        const centerX = isLandscape ? 200 : 120;
+        const size = isLandscape ? 10 : 25;
+        const centerX = isLandscape ? 180 : 120;
         const centerY = isLandscape ? 140 : 120;
 
         container.innerHTML = ""; // Xóa các ảnh cũ để vẽ lại

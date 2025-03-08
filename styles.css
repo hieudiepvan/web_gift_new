@@ -83,8 +83,8 @@ button:hover {
 }
 .center-image {
     position: absolute;
-    width: 140px; /* Điều chỉnh kích thước */
-    height: 120px;
+    width: 100px; /* Điều chỉnh kích thước */
+    height: 100px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Căn giữa chính xác */
